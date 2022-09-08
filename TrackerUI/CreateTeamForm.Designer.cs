@@ -54,7 +54,7 @@
             // teamNameValue
             // 
             this.teamNameValue.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.teamNameValue.Location = new System.Drawing.Point(37, 109);
+            this.teamNameValue.Location = new System.Drawing.Point(37, 115);
             this.teamNameValue.Name = "teamNameValue";
             this.teamNameValue.Size = new System.Drawing.Size(354, 35);
             this.teamNameValue.TabIndex = 13;
@@ -64,7 +64,7 @@
             this.teamNameLabel.AutoSize = true;
             this.teamNameLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.teamNameLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.teamNameLabel.Location = new System.Drawing.Point(37, 69);
+            this.teamNameLabel.Location = new System.Drawing.Point(37, 75);
             this.teamNameLabel.Name = "teamNameLabel";
             this.teamNameLabel.Size = new System.Drawing.Size(163, 37);
             this.teamNameLabel.TabIndex = 12;
@@ -89,7 +89,7 @@
             this.addMemberButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addMemberButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.addMemberButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.addMemberButton.Location = new System.Drawing.Point(134, 231);
+            this.addMemberButton.Location = new System.Drawing.Point(134, 237);
             this.addMemberButton.Name = "addMemberButton";
             this.addMemberButton.Size = new System.Drawing.Size(150, 41);
             this.addMemberButton.TabIndex = 19;
@@ -100,7 +100,7 @@
             // 
             this.selectTeamMemberDropDown.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.selectTeamMemberDropDown.FormattingEnabled = true;
-            this.selectTeamMemberDropDown.Location = new System.Drawing.Point(37, 187);
+            this.selectTeamMemberDropDown.Location = new System.Drawing.Point(37, 193);
             this.selectTeamMemberDropDown.Name = "selectTeamMemberDropDown";
             this.selectTeamMemberDropDown.Size = new System.Drawing.Size(354, 38);
             this.selectTeamMemberDropDown.TabIndex = 18;
@@ -110,7 +110,7 @@
             this.selectTeamMemberLabel.AutoSize = true;
             this.selectTeamMemberLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.selectTeamMemberLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.selectTeamMemberLabel.Location = new System.Drawing.Point(37, 147);
+            this.selectTeamMemberLabel.Location = new System.Drawing.Point(37, 153);
             this.selectTeamMemberLabel.Name = "selectTeamMemberLabel";
             this.selectTeamMemberLabel.Size = new System.Drawing.Size(269, 37);
             this.selectTeamMemberLabel.TabIndex = 17;
