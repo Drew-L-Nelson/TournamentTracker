@@ -1,3 +1,5 @@
+﻿using System;
+
 namespace TrackerUI
 {
     internal static class Program
