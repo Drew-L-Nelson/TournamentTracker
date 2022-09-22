@@ -4,6 +4,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrackerLibrary.DataAccess;
+using TrackerLibrary.DataAcess;
 
 namespace TrackerLibrary
 {
@@ -23,7 +25,7 @@ namespace TrackerLibrary
             if (textFiles == true)
             {
                 // TODO - Create the Text Connection
-                TextConnection text = new TextConnection();
+                TextConnector text = new TextConnector();
                 Connections.Add(text);
             }
         }
