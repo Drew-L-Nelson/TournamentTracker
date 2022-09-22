@@ -14,7 +14,7 @@ using TrackerLibrary.Models;
     @PrizePercentage float,
     @id int = 0 output  */
 
-namespace TrackerLibrary.DataAcess
+namespace TrackerLibrary.DataAccess
 {
     public class SqlConnector : IDataConnection
     {
