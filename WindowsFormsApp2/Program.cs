@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TrackerUI
+namespace TrackerUIXXX
 {
     internal static class Program
     {
