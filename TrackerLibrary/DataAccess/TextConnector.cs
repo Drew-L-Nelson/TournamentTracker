@@ -4,17 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TrackerLibrary.Models;
+using TrackerLibrary.DataAccess.TextHelpers;
+using System.Runtime.CompilerServices;
 
 namespace TrackerLibrary.DataAccess
 {
     // TODO - Wire up the CreatePrize for text files
     public class TextConnector : IDataConnection
     {
+        private const string PrizesFile = "PrizesModels.csv";
         public PrizeModel CreatePrize(PrizeModel model)
         {
-            model.Id = 1;
+            // Load the text file
+            // Convert the text to List<PrizeModel>
+            // Find the max ID
+            // Add the new record with the new ID (max + 1)
+            // Convert the prizes to a list<string>
+            // Save the list<string> to the text file
 
-            return model;
+
         }
     }
 }
