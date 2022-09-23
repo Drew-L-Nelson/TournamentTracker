@@ -34,7 +34,17 @@ namespace TrackerLibrary.DataAccess.TextConnector
             foreach (string line in lines)
             {
                 string[] cols = line.Split(',');
+
+                PrizeModel p = new PrizeModel();
+                p.Id = int.Parse(cols[0]);
+                p.PlaceNumber = int.Parse(cols[1]);
+                p.PlaceName = cols[2];
+                p.PrizeAmount = decimal.Parse(cols[3]);
+                p.PrizePercentage = double.Parse(cols[4]);
+                output.Add(p);
             }
+
+            return output;
         }
     }
 }
