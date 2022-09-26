@@ -15,8 +15,11 @@ namespace TrackerLibrary.DataAccess
         private const string PrizesFile = "PrizesModels.csv";
         public PrizeModel CreatePrize(PrizeModel model)
         {
-            // Load the text file
-            // Convert the text to List<PrizeModel>
+            // Load the text file and convert the text to List<PrizeModel>
+            List<PrizeModel> prizes = PrizesFile.FullFilePath().LoadFile().ConvertToPrizeModels();
+
+
+            
             // Find the max ID
             // Add the new record with the new ID (max + 1)
             // Convert the prizes to a list<string>
