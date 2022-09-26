@@ -29,7 +29,7 @@ namespace TrackerLibrary.DataAccess
             // Save the list<string> to the text file
             prizes.SaveToPrizeFile(PrizesFile);
 
-
+            return model;
         }
     }
 }
