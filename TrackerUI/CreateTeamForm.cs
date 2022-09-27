@@ -17,9 +17,15 @@ namespace TrackerUI
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void createMemberButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private bool ValidateForm()
+        {
+            // TODO - Add validation to the form
+            return true;
         }
     }
 }
