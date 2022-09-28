@@ -24,7 +24,26 @@ namespace TrackerUI
 
         private bool ValidateForm()
         {
-            // TODO - Add validation to the form
+            if (firstNameValue.Text.Length == 0)
+            {
+                return false;
+            }
+
+            if (lastNameValue.Text.Length == 0)
+            {
+                return false;
+            }
+
+            if (emailValue.Text.Length == 0)
+            {
+                return false;
+            }
+
+            if (cellPhoneValue.Text.Length == 0)
+            {
+                return false;
+            }
+
             return true;
         }
     }
