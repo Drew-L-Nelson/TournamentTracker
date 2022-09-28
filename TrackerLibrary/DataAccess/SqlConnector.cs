@@ -20,7 +20,16 @@ namespace TrackerLibrary.DataAccess
     {
         public PersonModel CreatePerson(PersonModel model)
         {
-            throw new NotImplementedException();
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Bluelime")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@FirstName", model.FirstName);
+                p.Add("@LastName", model.LastName);
+                p.Add("@EmailAddress", model.EmailAddress);
+                p.Add("@CellphoneNumber", model.CellphoneNumber);
+
+                return model;
+            }
         }
 
         // TODO - Make the CreatePrize method actually save to the database
