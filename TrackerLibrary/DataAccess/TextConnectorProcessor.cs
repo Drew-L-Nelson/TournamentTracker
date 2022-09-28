@@ -78,5 +78,10 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
             File.WriteAllLines(fileName.FullFilePath(), lines);
         }
+
+        public static void SaveToPeopleFile(this List<PersonModel> models, string fileName)
+        {
+
+        }
     }
 }
