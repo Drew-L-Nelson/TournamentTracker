@@ -22,7 +22,7 @@ namespace TrackerUI
         {
             InitializeComponent();
 
-            CreateSampleData();
+            //CreateSampleData();
 
             WireUpLists();
         }
