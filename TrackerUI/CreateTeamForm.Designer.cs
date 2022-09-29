@@ -233,9 +233,9 @@
             this.teamMembersListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.teamMembersListBox.FormattingEnabled = true;
             this.teamMembersListBox.ItemHeight = 30;
-            this.teamMembersListBox.Location = new System.Drawing.Point(444, 109);
+            this.teamMembersListBox.Location = new System.Drawing.Point(444, 49);
             this.teamMembersListBox.Name = "teamMembersListBox";
-            this.teamMembersListBox.Size = new System.Drawing.Size(345, 362);
+            this.teamMembersListBox.Size = new System.Drawing.Size(345, 422);
             this.teamMembersListBox.TabIndex = 21;
             // 
             // deleteSelectedMemeberButton
