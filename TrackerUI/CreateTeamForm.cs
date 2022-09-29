@@ -22,12 +22,18 @@ namespace TrackerUI
         {
             InitializeComponent();
 
+            CreateSampleData();
+
             WireUpLists();
         }
 
         private void CreateSampleData()
         {
+            availableTeamMembers.Add(new PersonModel { FirstName = "Andrew", LastName = "Simmons" });
+            availableTeamMembers.Add(new PersonModel { FirstName = "Boomer", LastName = "Kingsley" });
 
+            selectedTeamMembers.Add(new PersonModel { FirstName = "Lexi", LastName = "Foxx" });
+            selectedTeamMembers.Add(new PersonModel { FirstName = "Stix", LastName = "Zidinia" });
         }
 
         private void WireUpLists()
