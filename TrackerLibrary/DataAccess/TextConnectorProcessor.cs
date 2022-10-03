@@ -88,6 +88,8 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                     t.TeamMembers.Add(people.Where(x => x.Id == int.Parse(id)).First());
                 }
             }
+
+            return output;
         }
 
         public static void SaveToPrizeFile(this List<PrizeModel> models, string fileName)
