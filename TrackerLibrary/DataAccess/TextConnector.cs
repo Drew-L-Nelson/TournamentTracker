@@ -24,7 +24,7 @@ namespace TrackerLibrary.DataAccess
 
             if (people.Count > 0)
             {
-                currentId = people.OrderByDescending(x => x.Id).First().Id = 1;
+                currentId = people.OrderByDescending(x => x.Id).First().Id + 1;
             }
 
             model.Id = currentId;
