@@ -219,7 +219,6 @@
             this.prizesLabel.Size = new System.Drawing.Size(91, 37);
             this.prizesLabel.TabIndex = 22;
             this.prizesLabel.Text = "Prizes:";
-            this.prizesLabel.Click += new System.EventHandler(this.prizesLabel_Click);
             // 
             // prizesListBox
             // 
@@ -275,9 +274,9 @@
             this.Name = "CreateTournamentForm";
             this.ShowInTaskbar = false;
             this.Text = "Create Tournament";
-            this.Load += new System.EventHandler(this.CreateTournamentForm_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            //this.Load += new System.EventHandler(this.CreateTournamentForm_Load);
+            //this.ResumeLayout(false);
+            //this.PerformLayout();
 
         }
 
