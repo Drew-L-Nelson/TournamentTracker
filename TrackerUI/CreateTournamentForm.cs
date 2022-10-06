@@ -22,11 +22,6 @@ namespace TrackerUI
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void prizesLabel_Click(object sender, EventArgs e)
         {
 

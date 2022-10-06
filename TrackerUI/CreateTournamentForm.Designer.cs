@@ -193,7 +193,6 @@
             this.deleteSelectedPlayersButton.TabIndex = 20;
             this.deleteSelectedPlayersButton.Text = "Delete Selected";
             this.deleteSelectedPlayersButton.UseVisualStyleBackColor = true;
-            this.deleteSelectedPlayersButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // deleteSelectedPrizeButton
             // 
