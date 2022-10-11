@@ -87,9 +87,17 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                 {
                     t.TeamMembers.Add(people.Where(x => x.Id == int.Parse(id)).First());
                 }
+
+                output.Add(t);
             }
 
             return output;
+        }
+
+        public static List<TournamentModel> ConverToTournamentModels(this List<string> lines)
+        {
+            //id,TournamentName,EntryFee,(id|id|id - Entered Teams), (id|id|id - Prizes), (Rounds - id^id^id|id^id^id|id^id^id)
+
         }
 
         public static void SaveToPrizeFile(this List<PrizeModel> models, string fileName)
