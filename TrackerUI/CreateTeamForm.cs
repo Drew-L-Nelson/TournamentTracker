@@ -121,7 +121,7 @@ namespace TrackerUI
             }
             else
             {
-                MessageBox.Show("Please select a team memeber to add.");
+                MessageBox.Show("Please select a team member to add.");
             }
         }
 
@@ -138,7 +138,7 @@ namespace TrackerUI
             }
             else
             {
-                MessageBox.Show("Please select a team memeber to remove.");
+                MessageBox.Show("Please select a team member to remove.");
             }
         }
 
