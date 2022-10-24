@@ -125,6 +125,11 @@ namespace TrackerUI
             tm.EnteredTeams = selectedTeams;
 
             // TODO - wire our matchups
+            // Order out list randomly of teams
+            // Check if it is big enough - if not, add in bye's - 2*2*2*2 - 2^4
+            // Create our first round of matchups
+            // Create every round after that - 8 matchups - 4 matchups - 2 matchups - 1 matchup
+
 
             GlobalConfig.Connection.CreateTournament(tm);
         }
