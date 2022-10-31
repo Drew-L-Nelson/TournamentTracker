@@ -18,6 +18,19 @@ namespace TrackerLibrary
         {
             List<TeamModel> randomizedTeams = RandomizeTeamOrder(model.EnteredTeams);
             int rounds = FindNumberOfRounds(randomizedTeams.Count);
+            int byes = 0;
+
+        }
+
+        private static int NumberOfByes(int rounds, int numberOfTeams)
+        {
+            int output = 0;
+            int totalTeams = 0;
+
+            for (int i = 1; i <= rounds; i++)
+            {
+
+            }
 
         }
 
