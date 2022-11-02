@@ -104,6 +104,7 @@ namespace TrackerUI
 
         private void createTournamentButton_Click(object sender, EventArgs e)
         {
+            // Validate data
             decimal fee = 0;
             bool feeAcceptable = decimal.TryParse(entryFeeValue.Text, out fee);
 
@@ -116,6 +117,7 @@ namespace TrackerUI
                 return;
             }
 
+            // Create our tournament model
             TournamentModel tm = new TournamentModel();
 
             tm.TournamentName = tournamentNameValue.Text;
@@ -124,7 +126,7 @@ namespace TrackerUI
             tm.Prizes = selectedPrizes;
             tm.EnteredTeams = selectedTeams;
 
-            // TODO - wire our matchups
+            // Wire our matchups
             TournamentLogic.CreateRounds(tm);
 
 

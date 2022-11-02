@@ -37,11 +37,23 @@ namespace TrackerLibrary
                 foreach (MatchupModel match in previousRound)
                 {
                     currMatchup.Entries.Add(new MatchupEntryModel { ParentMatchup = match });
+
+                    if (currMatchup.Entries.Count > 1)
+                    {
+                        currMatchup.MatchupRound = round;
+                        currRound.Add(currMatchup);
+                        currMatchup = new MatchupModel();
+                    }
                 }
+
+                model.Rounds.Add(currRound);
+                previousRound = currRound;
+
+                currRound = new List<MatchupModel>();
+                round += 1;
+
             }
         }
-
-        // test 1 test 2 test 3
 
         private static List<MatchupModel> CreateFirstRound(int byes, List<TeamModel> teams)
         {
