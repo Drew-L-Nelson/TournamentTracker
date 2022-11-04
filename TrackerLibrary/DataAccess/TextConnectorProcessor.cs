@@ -193,8 +193,21 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             }
         }
 
-        private static List<MatchupEntryModel> ConvertToMatchupEntryModel(this List<string> input)
+        private static List<MatchupEntryModel> ConvertToMatchupEntryModels(this List<string> input)
         {
+            // id=0,TeamCompeting=1,Score=2,ParentMatchup=3
+            List<MatchupEntryModel> output = new List<MatchupEntryModel>();
+
+            foreach (string line in lines)
+            {
+                string[] cols = line.Split(',');
+
+                MatchupEntryModel me = new MatchupEntryModel();
+                me.Id = int.Parse(cols[0]);
+                me.TeamCompeting = LookupTeamById(int.Parse(cols[1]));
+                me.Score = int.Parse(cols[2]);
+                me.ParentMatchup = LookupMatchupById(int.Parse(cols[3]));
+            }
             //List<PersonModel> output = new List<PersonModel>();
 
             //foreach (string line in lines)
@@ -233,7 +246,14 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
             return teams.Where(x => x.Id == id).First();
         }
-        public static List<MatchupModel> ConvertToMatchupModelModels(this List<string> lines)
+
+        private static MatchupModel LookupMatchupById(int id)
+        {
+            List<MatchupModel> matchups = GlobalConfig.MatchupFile.FullFilePath().LoadFile().ConvertToMatchupModels();
+
+            return matchups.Where(x => x.Id == id).First();
+        }
+        public static List<MatchupModel> ConvertToMatchupModels(this List<string> lines)
         {
             //id=0,entries=1(pipe delimited by id),winner=2, matchupRound=3 
 
